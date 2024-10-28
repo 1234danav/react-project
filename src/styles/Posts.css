@@ -1,0 +1,71 @@
+/* src/styles/Posts.css */
+
+.posts-container {
+  padding: 20px;
+  max-width: 800px; /* Limit the width of the posts container */
+  margin: auto; /* Center the container */
+  font-family: Arial, sans-serif; /* Set a readable font */
+}
+
+h1 {
+  text-align: center; /* Center the heading */
+  color: #333; /* Dark gray color for the title */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.create-post-link {
+  display: inline-block; /* Make it a block for better click area */
+  padding: 10px 20px; /* Add padding */
+  background-color: #28a745; /* Green background */
+  color: white; /* White text */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  margin-bottom: 20px; /* Space below the button */
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.create-post-link:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.posts-table {
+  width: 100%; /* Full width of the table */
+  border-collapse: collapse; /* Remove space between cells */
+}
+
+.posts-table th, .posts-table td {
+  padding: 12px; /* Add padding inside cells */
+  text-align: left; /* Align text to the left */
+  border-bottom: 1px solid #ddd; /* Light gray border below rows */
+}
+
+.posts-table th {
+  background-color: #f8f9fa; /* Light gray background for header */
+  color: #333; /* Dark gray color for header text */
+}
+
+.posts-table tr:hover {
+  background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+.posts-table td a {
+  margin-right: 10px; /* Space between links */
+  text-decoration: none; /* Remove underline */
+  color: #007bff; /* Bootstrap link color */
+  transition: color 0.3s; /* Smooth transition for hover */
+}
+
+.posts-table td a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+@media (max-width: 600px) {
+  /* Responsive design for small screens */
+  .posts-table {
+      font-size: 14px; /* Smaller font size for mobile */
+  }
+
+  .create-post-link {
+      padding: 8px 16px; /* Smaller button padding */
+  }
+}
